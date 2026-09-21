@@ -8,7 +8,7 @@
 - [Where to buy](#where-to-buy)
   - [What to look for in a listing](#what-to-look-for-in-a-listing)
 - [Compatibility checks on specific listings](#compatibility-checks-on-specific-listings)
-  - [Amazon B08XVX3S24 — 1F22N (Alienware M15/M17, G7 15 7590) — NOT COMPATIBLE](#amazon-b08xvx3s24--1f22n-alienware-m15m17-g7-15-7590--not-compatible)
+  - [Amazon B08XVX3S24 — 1F22N / 0JJPFK / 0HYWXJ — COMPATIBLE](#amazon-b08xvx3s24--1f22n--0jjpfk--0hywxj--compatible)
 - [After installing](#after-installing)
 
 ## Why replace
@@ -79,29 +79,46 @@ Use these search URLs instead; they'll always return the current listings:
 
 ## Compatibility checks on specific listings
 
-### Amazon B08XVX3S24 — 1F22N (Alienware M15/M17, G7 15 7590) — NOT COMPATIBLE
+### Amazon B08XVX3S24 — 1F22N / 0JJPFK / 0HYWXJ — COMPATIBLE
 
 Listing: https://www.amazon.com/1F22N-Replacement-Compatible-Alienware-5590-D2783W/dp/B08XVX3S24
 
-**Verdict: do not buy this for the G7 17 7790.** The 7590 in the title is
-a different laptop — Dell G7 **15** 7590, a 15.6" chassis — not the
-17.3" **7790** we need.
+Seller-stated specs (from the product detail section, not just the title):
 
-| Spec           | 1F22N (this listing)              | MC34Y (what the 7790 needs) |
-|----------------|-----------------------------------|-----------------------------|
-| Capacity       | 76 Wh                             | 60 Wh                       |
-| Voltage        | 11.4 V                            | 15.2 V                      |
-| Cell count     | 6-cell                            | 4-cell                      |
-| Fits chassis   | Alienware M15/M17, G7 15 7590, G5 15 5590 | G7 17 7790          |
+- **Battery type:** Li-ion
+- **Voltage:** 15.2 V
+- **Capacity:** 60 Wh
+- **Replaces P/N:** 1F22N, 01F22N, JJPFK, 0JJPFK, HYWXJ, 0HYWXJ
+- **Compatible models:** G5 5590, G7 7590, **G7 7790**, Alienware M15
+  (2018), Alienware M17 (2019)
+- CE / FCC / RoHS certified
 
-The voltage mismatch alone (11.4 V vs 15.2 V) means the charging circuit
-would not regulate correctly even if the connector physically mated, and
-the 6-cell 1F22N is a different physical size than the 4-cell bay in the
-17.3" chassis.
+**Verdict: compatible with the G7 17 7790.** Every spec that matters is
+correct:
 
-Rule of thumb: **any Dell replacement battery listed as compatible with
-"7590" but not "7790" is the wrong one** — the digit swap is a different
-laptop generation and form factor.
+| Spec         | This listing | What the 7790 needs |
+|--------------|--------------|---------------------|
+| Voltage      | 15.2 V       | 15.2 V ✓            |
+| Capacity     | 60 Wh        | 60 Wh ✓             |
+| Cross-ref    | 0JJPFK, 0HYWXJ | Same 4-cell family as MC34Y / 33YDH ✓ |
+| Model listed | G7 7790      | G7 7790 ✓           |
+
+Notes:
+
+- The "1F22N" at the front of the title is SEO keyword stuffing — 1F22N
+  by itself is the 76 Wh / 11.4 V Alienware pack, but the actual product
+  shipped is the 15.2 V / 60 Wh pack for the G7 7790 (as confirmed by the
+  detail-section specs).
+- **0JJPFK / 0HYWXJ** are Dell's own cross-references for this cell, in
+  the same family as MC34Y — any of these part numbers on the arrival
+  sticker is correct.
+- Aftermarket cell, not a Dell OEM battery — expect real-world capacity
+  to run slightly under the 60 Wh label. Confirm with a battery report
+  after install.
+
+**Sanity check on arrival:** the sticker on the received battery should
+read **15.2 V, 60 Wh, 4-cell**. If it reads 11.4 V or 76 Wh, return it —
+that would be the wrong (Alienware) pack.
 
 ## After installing
 

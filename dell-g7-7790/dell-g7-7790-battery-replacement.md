@@ -1,5 +1,16 @@
 # Dell G7 7790 — Battery Replacement Notes
 
+## Contents
+
+- [Why replace](#why-replace)
+- [Battery specs (Dell G7 7790, 17.3")](#battery-specs-dell-g7-7790-173)
+- [How to verify before buying](#how-to-verify-before-buying)
+- [Where to buy](#where-to-buy)
+  - [What to look for in a listing](#what-to-look-for-in-a-listing)
+- [Compatibility checks on specific listings](#compatibility-checks-on-specific-listings)
+  - [Amazon B08XVX3S24 — 1F22N (Alienware M15/M17, G7 15 7590) — NOT COMPATIBLE](#amazon-b08xvx3s24--1f22n-alienware-m15m17-g7-15-7590--not-compatible)
+- [After installing](#after-installing)
+
 ## Why replace
 
 Battery report from the failing G7 7790 (see screenshot in postmortem):
@@ -65,6 +76,32 @@ Use these search URLs instead; they'll always return the current listings:
   or "G3/G5" — those use different batteries).
 - Prefer sellers offering a **12-month warranty**; aftermarket cells vary
   wildly in real-world capacity.
+
+## Compatibility checks on specific listings
+
+### Amazon B08XVX3S24 — 1F22N (Alienware M15/M17, G7 15 7590) — NOT COMPATIBLE
+
+Listing: https://www.amazon.com/1F22N-Replacement-Compatible-Alienware-5590-D2783W/dp/B08XVX3S24
+
+**Verdict: do not buy this for the G7 17 7790.** The 7590 in the title is
+a different laptop — Dell G7 **15** 7590, a 15.6" chassis — not the
+17.3" **7790** we need.
+
+| Spec           | 1F22N (this listing)              | MC34Y (what the 7790 needs) |
+|----------------|-----------------------------------|-----------------------------|
+| Capacity       | 76 Wh                             | 60 Wh                       |
+| Voltage        | 11.4 V                            | 15.2 V                      |
+| Cell count     | 6-cell                            | 4-cell                      |
+| Fits chassis   | Alienware M15/M17, G7 15 7590, G5 15 5590 | G7 17 7790          |
+
+The voltage mismatch alone (11.4 V vs 15.2 V) means the charging circuit
+would not regulate correctly even if the connector physically mated, and
+the 6-cell 1F22N is a different physical size than the 4-cell bay in the
+17.3" chassis.
+
+Rule of thumb: **any Dell replacement battery listed as compatible with
+"7590" but not "7790" is the wrong one** — the digit swap is a different
+laptop generation and form factor.
 
 ## After installing
 

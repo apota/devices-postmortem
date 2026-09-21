@@ -9,6 +9,7 @@
   - [What to look for in a listing](#what-to-look-for-in-a-listing)
 - [Compatibility checks on specific listings](#compatibility-checks-on-specific-listings)
   - [Amazon B08XVX3S24 — 1F22N / 0JJPFK / 0HYWXJ — COMPATIBLE](#amazon-b08xvx3s24--1f22n--0jjpfk--0hywxj--compatible)
+  - [Amazon B0D8J8QMBM — 1F22N / 0JJPFK / 0HYWXJ (Li-Po, 4-cell) — COMPATIBLE](#amazon-b0d8j8qmbm--1f22n--0jjpfk--0hywxj-li-po-4-cell--compatible)
 - [After installing](#after-installing)
 
 ## Why replace
@@ -119,6 +120,51 @@ Notes:
 **Sanity check on arrival:** the sticker on the received battery should
 read **15.2 V, 60 Wh, 4-cell**. If it reads 11.4 V or 76 Wh, return it —
 that would be the wrong (Alienware) pack.
+
+### Amazon B0D8J8QMBM — 1F22N / 0JJPFK / 0HYWXJ (Li-Po, 4-cell) — COMPATIBLE
+
+Listing: https://www.amazon.com/dp/B0D8J8QMBM
+
+Seller-stated specs (from "About this item"):
+
+- **Battery type:** Lithium Polymer
+- **Voltage:** 15.2 V
+- **Capacity:** 60 Wh
+- **Cells:** 4-cell
+- **Cycle rating:** up to 500 recharge cycles
+- **Replaces P/N:** 1F22N, 01F22N, JJPFK, 0JJPFK, HYWXJ, 0HYWXJ, 08622M,
+  XRGXX, 06YV0V
+- **Compatible models:** Alienware M15 R1, M17 R1 (2019), G5 5590, G7 15
+  7590, **G7 17 7790** (7790-D1765B, 7790-1785), Alienware ALW15M/ALW17M
+  variants, P37E/P40E/P79F/P82F chassis
+- **Warranty:** 30-day refund, 12-month warranty
+
+**Verdict: compatible with the G7 17 7790.** Every spec matches:
+
+| Spec         | This listing         | What the 7790 needs |
+|--------------|----------------------|---------------------|
+| Voltage      | 15.2 V               | 15.2 V ✓            |
+| Capacity     | 60 Wh                | 60 Wh ✓             |
+| Cell count   | 4-cell               | 4-cell ✓            |
+| Cross-ref    | 0JJPFK, 0HYWXJ       | Same 4-cell family as MC34Y / 33YDH ✓ |
+| Model listed | G7 17 7790           | G7 17 7790 ✓        |
+
+Notes vs. B08XVX3S24:
+
+- **Chemistry:** this listing advertises **Lithium Polymer (Li-Po)** vs
+  B08XVX3S24's **Li-ion**. Both are electrically equivalent for laptop
+  use — the charging circuit doesn't care. Li-Po packs are typically a
+  hair thinner and can have slightly better swell tolerance; not a
+  meaningful buying factor at this capacity.
+- **Wider P/N cross-reference:** this listing also names **08622M,
+  XRGXX, 06YV0V** — extra Dell part numbers in the same family. Broader
+  cross-ref is a mild positive signal that the seller understands the
+  chassis lineup.
+- **Warranty:** explicit 12-month warranty stated, which the B08XVX3S24
+  listing did not. Prefer this listing if price is similar.
+
+Same sanity check on arrival: sticker should read **15.2 V, 60 Wh,
+4-cell**. Reject anything reading 11.4 V or 76 Wh.
 
 ## After installing
 

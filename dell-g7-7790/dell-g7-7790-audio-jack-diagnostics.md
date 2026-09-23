@@ -154,4 +154,61 @@ ribbon cable. That makes replacement much cheaper than a mainboard swap.
   fit the replacement. Dell's service manual for the G7 7790 documents
   the exact steps and torque values.
 - If you don't want to open the laptop, a USB-C or USB-A audio dongle
-  (§4) is a permanent-enough fix.
+  (§4) is a permanent-enough fix. See §5.1 for what to buy.
+
+### 5.1 USB audio dongle — the no-surgery fix
+
+A USB audio dongle is a small adapter that plugs into a USB-A or USB-C
+port on the laptop and exposes its own 3.5 mm jack (headphone-only or a
+CTIA combo jack for headset+mic). Windows sees it as an entirely new
+audio device — a separate codec, a separate driver, a separate endpoint —
+so the broken onboard Realtek jack is bypassed completely. This is why
+it's a real fix, not a workaround: nothing about the laptop's failed
+hardware is in the signal path anymore.
+
+**Why this is a good option on the G7 7790 specifically:**
+
+- The G7 7790 has multiple USB-A 3.0 ports and one USB-C (Thunderbolt 3
+  on higher trims) — you can leave the dongle permanently in a
+  back/side port and forget about it.
+- Class-compliant USB audio needs no drivers on Windows 10/11; it works
+  the instant you plug it in.
+- Total cost is $8–$40 depending on how much you care about DAC quality.
+
+**What to look for when buying:**
+
+1. **"USB audio adapter" or "USB DAC"**, class-compliant / no drivers
+   required.
+2. **Combo jack (TRRS/CTIA)** if you use a headset with a mic; a
+   headphone-only dongle will not pass mic audio. Some dongles have
+   *separate* headphone and mic 3.5 mm sockets — that's fine too.
+3. **USB-A vs USB-C** — pick to match the port you'll leave it in.
+   USB-A is more universal; USB-C frees up the (scarcer) USB-A ports for
+   thumb drives etc.
+4. Optional: **24-bit / 96 kHz or higher** if you care about audio
+   quality. The cheap $5 dongles are usually 16-bit / 48 kHz, which is
+   fine for calls and casual listening but noticeably worse for music
+   than the laptop's original jack was.
+
+**Concrete models worth searching for** (all well-reviewed, widely
+stocked; I'm giving search links rather than specific product URLs
+because Amazon product IDs change and the search endpoint is stable):
+
+- **UGREEN USB External Sound Card** — cheap, USB-A, combo or dual
+  socket, good for calls/gaming headsets.
+  [Amazon search](https://www.amazon.com/s?k=UGREEN+USB+external+sound+card)
+- **Apple USB-C to 3.5 mm Headphone Jack Adapter** — genuinely good DAC
+  for $9, USB-C, headphone-only (no mic support on non-Apple headsets on
+  Windows in most cases — verify before buying if you need a mic).
+  [Amazon search](https://www.amazon.com/s?k=Apple+USB-C+to+3.5mm+headphone+jack+adapter)
+- **Creative Sound Blaster Play! 4** — mid-tier ($30–$40), USB-A,
+  24-bit/96 kHz, combo jack, clearly better than the built-in codec.
+  [Amazon search](https://www.amazon.com/s?k=Creative+Sound+Blaster+Play+4)
+- **Sabrent USB External Stereo Sound Adapter (AU-MMSA)** — the
+  archetypal cheap USB-A dongle, dual sockets (separate headphone/mic).
+  [Amazon search](https://www.amazon.com/s?k=Sabrent+AU-MMSA)
+
+**After plugging it in:** open **Settings → System → Sound** and set the
+new USB device as the default output (and default input, if it has a
+mic socket you use). Windows remembers this per-device, so it will
+auto-select the dongle whenever it's connected.
